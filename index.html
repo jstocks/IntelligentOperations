@@ -762,6 +762,7 @@
 <nav class="sidebar">
   <div class="nav-section-label">Overview</div>
   <div class="nav-item active" data-nav="cmd"><span class="nav-icon">⚡</span> Command Center</div>
+  <div class="nav-item" role="button" tabindex="0" data-nav="recommendations"><span class="nav-icon">📅</span> Recommendations</div>
   <div class="nav-item" role="button" tabindex="0" data-nav="pipeline"><span class="nav-icon">📊</span> Pipeline</div>
   <div class="nav-item" role="button" tabindex="0" data-nav="forecast"><span class="nav-icon">📈</span> Forecast</div>
 
@@ -788,12 +789,11 @@
   <div class="nav-item" role="button" tabindex="0" data-nav="knowledge"><span class="nav-icon">📚</span> Knowledge Base</div>
 
   <div class="nav-section-label">AI Agents</div>
-  <div class="nav-item" role="button" tabindex="0" data-nav="product-agent"><span class="nav-icon">🔬</span> Parts Agent</div>
-  <div class="nav-item" role="button" tabindex="0" data-nav="finance-agent"><span class="nav-icon">💰</span> Contract & Finance</div>
+  <div class="nav-item" role="button" tabindex="0" data-nav="product-agent"><span class="nav-icon">🔬</span> Product Expert</div>
+  <div class="nav-item" role="button" tabindex="0" data-nav="finance-agent"><span class="nav-icon">💼</span> Commercial Agent</div>
   <div class="nav-item" role="button" tabindex="0" data-nav="trip-advisor"><span class="nav-icon">✈️</span> Travel Agent</div>
 
   <div class="nav-section-label">Activity</div>
-  <div class="nav-item" role="button" tabindex="0" data-nav="recommendations"><span class="nav-icon">📅</span> Recommendations</div>
 </nav>
 
 <!-- ════════════ MAIN ════════════ -->
@@ -1624,7 +1624,7 @@
             <td>
               <div style="background:var(--sf-blue-light);border-radius:6px;padding:8px;font-size:11px">
                 <div class="font-bold" style="color:var(--sf-blue-dark);margin-bottom:3px">📄 Service Outcomes White Paper</div>
-                <div class="text-muted">23% re-do rate reduction. 12-center, 3,200-service call RCT. Published ASGE 2024. Request from Parts Agent.</div>
+                <div class="text-muted">23% re-do rate reduction. 12-center, 3,200-service call RCT. Published ASGE 2024. Request from Product Expert.</div>
               </div>
             </td>
             <td style="font-size:11px">
@@ -1648,7 +1648,7 @@
             <td>
               <div style="background:var(--sf-blue-light);border-radius:6px;padding:8px;font-size:11px">
                 <div class="font-bold" style="color:var(--sf-blue-dark);margin-bottom:3px">📊 TCO Model (Pricing Agent)</div>
-                <div class="text-muted">5-year total cost calculator. Includes maintenance overhead labor, HAI risk reduction, and instrument replacement cycles. Pull from Contract & Pricing Agent.</div>
+                <div class="text-muted">5-year total cost calculator. Includes maintenance overhead labor, HAI risk reduction, and instrument replacement cycles. Pull from Commercial Agent.</div>
               </div>
             </td>
             <td style="font-size:11px">
@@ -1696,7 +1696,7 @@
             <td>
               <div style="background:var(--sf-blue-light);border-radius:6px;padding:8px;font-size:11px">
                 <div class="font-bold" style="color:var(--sf-blue-dark);margin-bottom:3px">🎓 APEX360 Academy Overview</div>
-                <div class="text-muted">30-day on-site ClinEd, e-learning platform, competency tracking. Average 6-wk to 100% proficiency. Request from Parts Agent.</div>
+                <div class="text-muted">30-day on-site ClinEd, e-learning platform, competency tracking. Average 6-wk to 100% proficiency. Request from Product Expert.</div>
               </div>
             </td>
             <td style="font-size:11px">
@@ -1837,7 +1837,7 @@
             <td>
               <div style="background:var(--sf-red-light);border-radius:6px;padding:8px;font-size:11px">
                 <div class="font-bold" style="color:var(--sf-red);margin-bottom:3px">⚡ Objection: Missing Feature</div>
-                <div class="text-muted">Confirm roadmap items with Parts Agent before commit. Use Parts Agent to pull APEX360 Q4 roadmap. Escalate to Product team for custom integration path if deal &gt;$1M.</div>
+                <div class="text-muted">Confirm roadmap items with Product Expert before commit. Use Product Expert to pull APEX360 Q4 roadmap. Escalate to Product team for custom integration path if deal &gt;$1M.</div>
               </div>
             </td>
             <td style="font-size:11px">
@@ -2245,7 +2245,7 @@
   <div class="grid-4 section-gap">
     <div class="kpi-tile"><div class="kpi-label">Total Files</div><div class="kpi-value">48</div><div class="kpi-sub">Across 4 knowledge domains</div></div>
     <div class="kpi-tile teal"><div class="kpi-label">Last Updated</div><div class="kpi-value" style="font-size:18px">Jul 22</div><div class="kpi-sub">8 files updated this week</div></div>
-    <div class="kpi-tile green"><div class="kpi-label">Bedrock Indexed</div><div class="kpi-value">48/48</div><div class="kpi-sub">All files in Parts Agent KB</div></div>
+    <div class="kpi-tile green"><div class="kpi-label">Bedrock Indexed</div><div class="kpi-value">48/48</div><div class="kpi-sub">All files in Product Expert KB</div></div>
     <div class="kpi-tile yellow"><div class="kpi-label">Pending Review</div><div class="kpi-value">3</div><div class="kpi-sub">Awaiting compliance approval</div></div>
   </div>
 
@@ -2518,7 +2518,7 @@
             <span class="repo-col-type"><span class="tag tag-green" style="font-size:9px">XLSX</span></span>
             <span class="repo-col-size">1.4 MB</span>
             <span class="repo-col-date">Jul 15, 2025</span>
-            <span class="repo-col-desc">Fully interactive 5-year TCO model. Input: service call volume, current maintenance overhead cost, HAI rate, and competitor pricing. Output: year-by-year cost comparison, payback period, and NPV. Also accessible via Contract & Pricing Agent.</span>
+            <span class="repo-col-desc">Fully interactive 5-year TCO model. Input: service call volume, current maintenance overhead cost, HAI rate, and competitor pricing. Output: year-by-year cost comparison, payback period, and NPV. Also accessible via Commercial Agent.</span>
             <span class="repo-col-action"><button class="btn btn-outline btn-sm" style="font-size:10px">Open</button></span>
           </div>
           <div class="repo-file-row" data-name="CFO_ROI_One_Pager_Template.pptx">
@@ -2621,7 +2621,7 @@
 <div id="page-product-agent" class="page">
   <div class="page-header">
     <div>
-      <div class="page-title">🔬 Parts Agent</div>
+      <div class="page-title">🔬 Product Expert</div>
       <div class="page-subtitle">Powered by AWS Bedrock · APEX360 Knowledge Base · Real-Time Product & Market Data</div>
     </div>
     <span class="tag tag-green" style="padding:6px 12px;font-size:12px">● Bedrock Connected</span>
@@ -2631,7 +2631,7 @@
     <div class="agent-header">
       <div class="agent-icon">🔬</div>
       <div>
-        <div class="agent-name">APEX360 Surgical Intelligence Agent</div>
+        <div class="agent-name">APEX360 Product Expert</div>
         <div class="agent-status">AWS Bedrock · Claude 3 Sonnet · Knowledge Base: APEX360 Product Suite 2025</div>
       </div>
       <div class="agent-powered">Bedrock KB</div>
@@ -2640,7 +2640,7 @@
       <div class="msg">
         <div class="msg-avatar">🤖</div>
         <div>
-          <div class="msg-bubble">Hello James. I'm your APEX360 Surgical Intelligence Agent, powered by AWS Bedrock with access to the full APEX360 knowledge base base, competitive intelligence, and real-time service evidence library. Ask me anything about our product portfolio, competitive positioning, service outcomes data, or market trends.</div>
+          <div class="msg-bubble">Hello James. I'm your APEX360 Product Expert, powered by AWS Bedrock with access to the full APEX360 knowledge base base, competitive intelligence, and real-time service evidence library. Ask me anything about our product portfolio, competitive positioning, service outcomes data, or market trends.</div>
           <div class="msg-time">Ready · Bedrock KB v2.4.1</div>
         </div>
       </div>
@@ -2666,8 +2666,8 @@
 <div id="page-finance-agent" class="page">
   <div class="page-header">
     <div>
-      <div class="page-title">💰 Contract & Pricing Agent</div>
-      <div class="page-subtitle">AWS Bedrock · Active/Past Contracts · Real-Time Pricing · GTM Financial Models</div>
+      <div class="page-title">💼 Commercial Agent</div>
+      <div class="page-subtitle">AWS Bedrock · Contracts · GPO Pricing · ROI Models · GTM Financial Intelligence</div>
     </div>
     <span class="tag tag-green" style="padding:6px 12px;font-size:12px">● Bedrock Connected</span>
   </div>
@@ -2676,7 +2676,7 @@
     <div class="agent-header" style="background:linear-gradient(135deg,#00401a,#006030)">
       <div class="agent-icon">💰</div>
       <div>
-        <div class="agent-name">APEX360 Contract & Pricing Agent</div>
+        <div class="agent-name">APEX360 Commercial Agent</div>
         <div class="agent-status">AWS Bedrock · SAP CRM Integration · Real-Time Pricing Engine · GTM Models</div>
       </div>
       <div class="agent-powered">Bedrock + SAP</div>
@@ -2685,7 +2685,7 @@
       <div class="msg">
         <div class="msg-avatar" style="background:var(--sf-green-dark)">💰</div>
         <div>
-          <div class="msg-bubble">Hello James. I'm your Contract & Finance Intelligence Agent. I have access to all active and historical APEX360 contracts in your territory, real-time list and contract pricing, GPO price ceilings, discount authorization levels, and GTM financial models including TCO calculators and ROI models. What would you like to know?</div>
+          <div class="msg-bubble">Hello James. I'm your Commercial Agent Intelligence Agent. I have access to all active and historical APEX360 contracts in your territory, real-time list and contract pricing, GPO price ceilings, discount authorization levels, and GTM financial models including TCO calculators and ROI models. What would you like to know?</div>
           <div class="msg-time">Connected · SAP + Pricing Engine · 847 contracts indexed</div>
         </div>
       </div>
@@ -3649,7 +3649,7 @@ function openFileDetail(row) {
     <div style="display:flex;flex-direction:column;gap:8px">
       ${!isLocked ? '<button class="btn btn-primary" style="width:100%">📥 Download File</button>' : '<button class="btn btn-outline" style="width:100%;color:var(--sf-red);border-color:var(--sf-red)" disabled>🔒 Restricted — Contact AVP</button>'}
       <button class="btn btn-outline" style="width:100%" data-click="copyFileName('${name}')">📋 Copy Filename</button>
-      <button class="btn btn-outline" style="width:100%">🤖 Send to Parts Agent</button>
+      <button class="btn btn-outline" style="width:100%">🤖 Send to Product Expert</button>
       <button class="btn btn-outline" style="width:100%">📧 Share via Email</button>
     </div>
   `;
@@ -4794,7 +4794,7 @@ function setRubricScore(catIdx, score) {
 // ─── AI AGENTS ────────────────────────────────────────────────
 const agentContexts = {
   product: {
-    system: `You are the APEX360 Surgical Intelligence Agent, embedded in a sales command center for VitalEdge APEX360. 
+    system: `You are the APEX360 Product Expert, embedded in a sales command center for VitalEdge APEX360. 
 You have deep knowledge of APEX360's equipment, Surgical Technology, clinical engineering, and surgical product lines. You know competitive positioning vs. Intuitive Surgical, Stryker, and Medtronic. 
 Respond concisely (3-5 sentences), in a professional sales enablement tone. Use bullet points for comparisons. 
 Always relate your answer back to how it helps sales reps win deals in hospital and IDN accounts.
@@ -4802,7 +4802,7 @@ Start responses with a bold insight headline.`,
     placeholder: 'product-input'
   },
   finance: {
-    system: `You are the APEX360 Contract & Finance Intelligence Agent embedded in a sales command center.
+    system: `You are the APEX360 Commercial Agent Intelligence Agent embedded in a sales command center.
 You have access to APEX360 contracts, GPO pricing (Vizient, Premier, HealthTrust), discount approval levels (Field auth: up to 8%, AVP: up to 12%, RVP: up to 18%), and GTM financial models.
 Respond concisely (3-5 sentences) in a financial/commercial tone. Use numbers and specifics.
 For ROI models, show 3-year payback calculations. For contracts, show relevant terms.
